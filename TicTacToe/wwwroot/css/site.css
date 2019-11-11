@@ -12,6 +12,20 @@ body {
     padding-right: 15px;
 }
 
+#grid {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-auto-rows: 1fr 1fr 1fr;
+}
+
+.square {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    font-size: 90px;
+    text-align: center;
+}
+
 /* Carousel */
 .carousel-caption p {
     font-size: 20px;
