@@ -26,6 +26,38 @@ body {
     text-align: center;
 }
 
+#checkers-board {
+    display: grid;
+    width: calc(8*75px);
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+#checkers-board > .square {
+    width: 75px;
+    height: 75px;
+}
+
+#checkers-board > .square > .checker {
+    width: 60px;
+    height: 60px;
+    border: solid 5px gray;
+    border-radius: 35px;
+    margin: 2.5px;
+}
+
+#checkers-form {
+    display: none;
+}
+
+.red {
+    background-color: red;
+}
+
+.black {
+    background-color: black;
+}
+
 /* Carousel */
 .carousel-caption p {
     font-size: 20px;
